@@ -25,7 +25,7 @@ export default function View() {
             <form action="" className="row d-flex">
                 <div class="form-floating mb-3 col-lg-3 col-md-6 ps-1">
                     <input type="text" class="form-control h-25" id="floatingInput" placeholder="Listing No" value={details.listing_no} disabled />
-                    <label for="floatingInput" className="">Listing No</label>
+                    <label for="floatingInput" className="">Quotation No</label>
                 </div>
                 <div class="form-floating mb-3 col-lg-3 col-md-6 ps-1">
                     <input type="text" class="form-control" id="floatingInput" placeholder="" value={details.part_no} disabled />
@@ -45,7 +45,7 @@ export default function View() {
                 </div>
                 <div class="form-floating mb-3 col-lg-3 col-md-6 ps-1">
                     <input type="text" class="form-control h-25" id="floatingInput" placeholder="" value={details.User} disabled />
-                    <label for="floatingInput" className="">User Name</label>
+                    <label for="floatingInput" className="">Buyer Name</label>
                 </div>
 
                 <div class="form-floating mb-3 col-lg-3 col-md-6 ps-1">
@@ -72,24 +72,23 @@ export default function View() {
                         <label for="floatingInput" className="">Submission Date</label>
                     </div>
                 </form>
-                <div className="col-lg-6 w-50  p-2">
-                    <h5>Selected Vendors</h5>
-                    <div className="d-flex justify-content-between gap-4 flex-wrap">
-                        <span class="badge text-bg-success">X7A4K9</span>
-                        <span class="badge text-bg-success">Q2LM8T</span>
-                        <span class="badge text-bg-success">N5WRZ1</span>
-                        <span class="badge text-bg-success">K3UEV7</span>
-                        <span class="badge text-bg-success">J9BQ2X</span>
-                        <span class="badge text-bg-success">D6Y3MC</span>
-                        <span class="badge text-bg-success">F1AZ8R</span>
-                        <span class="badge text-bg-success">M7KC3J</span>
-                        <span class="badge text-bg-success">R5VD9L</span>
-                        <span class="badge text-bg-success">Z3NX7E</span>
-                        <span class="badge text-bg-success">L2HP4B</span>
-                        <span class="badge text-bg-success">T6Q9WY</span>
-                        <span class="badge text-bg-success">W8J1CA</span>
-                        <span class="badge text-bg-success">Y5T3PN</span>
-
+                <div className="col-lg-6 p-3">
+                    <h5 className="mb-3 fw-bold">Selected Vendors</h5>
+                    <div className="d-flex flex-column gap-3">
+                        <div className="d-flex gap-2">
+                            <span className="badge text-bg-success p-2 flex-fill text-center" style={{ minWidth: '120px' }}>ABC Suppliers</span>
+                            <span className="badge text-bg-success p-2 flex-fill text-center" style={{ minWidth: '120px' }}>XYZ Manufacturing</span>
+                            <span className="badge text-bg-success p-2 flex-fill text-center" style={{ minWidth: '120px' }}>Global Parts Inc.</span>
+                            <span className="badge text-bg-success p-2 flex-fill text-center" style={{ minWidth: '120px' }}>Precision Tools Co.</span>
+                            <span className="badge text-bg-success p-2 flex-fill text-center" style={{ minWidth: '120px' }}>Metro Components</span>
+                        </div>
+                        <div className="d-flex gap-2">
+                            <span className="badge text-bg-success p-2 flex-fill text-center" style={{ minWidth: '120px' }}>Quality Materials Ltd.</span>
+                            <span className="badge text-bg-success p-2 flex-fill text-center" style={{ minWidth: '120px' }}>Industrial Solutions</span>
+                            <span className="badge text-bg-success p-2 flex-fill text-center" style={{ minWidth: '120px' }}>Tech Fabricators</span>
+                            <span className="badge text-bg-success p-2 flex-fill text-center" style={{ minWidth: '120px' }}>Allied Distributors</span>
+                            <span className="badge text-bg-success p-2 flex-fill text-center" style={{ minWidth: '120px' }}>Prime Vendors Inc.</span>
+                        </div>
                     </div>
                 </div>
             </div>

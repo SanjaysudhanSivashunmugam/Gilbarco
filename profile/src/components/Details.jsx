@@ -8,8 +8,7 @@ export default function Details() {
         role:"Team",
         phoneNumber:829898493893
     }
-    const notifyA = () => toast.success('Your Details are Saved', {position: "top-center"});
-    
+    const notify = () => toast("Wow so easy !");   
     
     return (
         <div className="container">
@@ -52,12 +51,13 @@ export default function Details() {
                         <label for="inputPassword4" class="form-label">Confirm Password</label>
                     </div>
                     <div class="col-12 me-auto">
-                        <button type="submit" onClick={notifyA} class="btn btn-success mb-4" style={{width:"100px"}}>Save</button>
+                        <button type="submit" onClick={notify} class="btn btn-success mb-4" style={{width:"100px"}}>Save</button>
+                        <ToastContainer position="top-right"/>
                     </div>
                 </form>
             </div>
             <div>
-          <ToastContainer />
+                
 
       </div>
         </div>
